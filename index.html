@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSON CRUD</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="main">
+    </div>
+    <div class="form">
+        <form action="#" id="insert" onsubmit="insertNew()">
+            <h3>Enter new Details</h3>
+            <input type="text" name="id" id="pid" placeholder="enter ID" required>
+            <input type="text" id="name" required placeholder="enter name">
+            <input type="email" id="mail" required placeholder="enter email">
+            <input type="text"  maxlength="10" id="num" required placeholder="enter phone no.">
+            <input type="submit" class="btn" value="Save" id="sub">
+        </form>
+    </div>    
+    <div class="edit-modal">
+        <form action="#">
+            <span for="id">ID</span> <input type="text" name="id" id="uid" disabled required>
+            <span for="name">Name</span> <input type="text" name="name" id="uname" required >
+            <span for="email">Email</span> <input type="email" name="email" id="umail" required >
+            <span for="contact">Contact</span> <input type="text" name="contact" id="ucont" required >
+            <input type="submit" class= "btn btn-cancle" value="Cancle" id="esc">
+            <input type="submit"  class = "btn" id="updateForm" value="Update">        
+        </form>
+    </div>
+    <footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </footer>
+</body>
+</html>

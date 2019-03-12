@@ -1,0 +1,101 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+#main {
+	width: 65%;
+	display: inline-block;
+	text-align: center;
+	padding: 30px 60px;
+}
+.form {
+    width: 25%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 30px 40px;
+}
+.form input:not(:last-of-type) {
+	margin: 10px auto;
+	padding: 10px 5px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #339966;
+    color: #fff;    
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+.btn-cancle{
+    background: #f34343;
+}
+#main table{
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+#main table tr, #main table td,#main table th{
+    border: 1px solid #000;
+    padding: 10px;
+}
+#main table tr:first-of-type table{
+    border-collapse: collapse;
+}
+#main table tr th{
+    text-transform: uppercase;
+}
+.action {
+	background: #285365;
+	color: #fff;
+}
+.update{
+    background: #2eafcb;
+}
+.update:hover {
+	background: #199fbc;
+}
+.update,.del{
+    color: #fff;
+}
+.del{
+    background: #f34343;
+}
+.del:hover{
+    background: red;
+}
+.edit-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0,0,0,0.8);
+    margin:auto;
+    display: none;
+}
+.edit-modal.on{
+    display: block;
+}
+.edit-modal form {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	width: 100%;
+	padding: 50px;
+	top: 50%;
+	position: absolute;
+	transform: translateY(-50%);
+}
+.edit-modal input[type='text'],.edit-modal input[type='email']{
+	padding: 8px;
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	margin: 20px auto;
+	flex-wrap: wrap;
+}
